@@ -6,4 +6,37 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-    Blog.create(title: 'Fuckin seeds baby', body: "this is the body of the test seed.")
+10.times do |blog|
+  Blog.create!(
+    title: "My blog post #{blog}",
+    body: "afdkjfasdfjhasldkjfha;sdklfj asdflk;aj sdfl;kja sdl;fk jasd;lkfj afdkjfasdfjhasldkjfha
+    asdl;fkj asd;flkaj sdfl;kajds flasdjka;dsjf all? { |all? { |
+      a;dslfkjads fl;aksdjfasdfsa|
+      afsdfasdlk;fjasdl;kfjas;ldkfj"
+  )
+end
+
+puts "10 blog posts created"
+
+5.times do |skill|
+  Skill.create!(
+    title: "Rails #{skill}",
+    percent_utilized: 15
+  )
+end
+
+puts "5 skills created"
+
+9.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Portfolio title: #{portfolio_item}",
+    subtitle: "My great service",
+    body: "ad;lkjasdfl;kajsd fa;lsdkfj as;dlkfj asd
+    adl;kfjasdl;kfjasdl;fkajsdfl;kasdjfl;asdkjfas
+    sdklfjasdl a;sdlkfjasd ;lfkja;sldkfjasd
+    fa;lsdkjfa sdf a;lsdkfj adls;kjf asd fa;sldkfjasd
+    asld;fkjasdf asd f;alksdjf d akjsdf ;alskdjjkd a;sldkfjasd",
+    main_image: "https://via.placeholder.com/600x400",
+    thumb_image: "https://via.placeholder.com/350x200"
+  )
+end
