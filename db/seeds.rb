@@ -6,13 +6,22 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+  )
+end
+
+puts "3 Topics created"
+
 10.times do |blog|
   Blog.create!(
     title: "My blog post #{blog}",
     body: "afdkjfasdfjhasldkjfha;sdklfj asdflk;aj sdfl;kja sdl;fk jasd;lkfj afdkjfasdfjhasldkjfha
     asdl;fkj asd;flkaj sdfl;kajds flasdjka;dsjf all? { |all? { |
       a;dslfkjads fl;aksdjfasdfsa|
-      afsdfasdlk;fjasdl;kfjas;ldkfj"
+      afsdfasdlk;fjasdl;kfjas;ldkfj",
+    topic_id: Topic.last.id
   )
 end
 
@@ -27,10 +36,24 @@ end
 
 puts "5 skills created"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
-    subtitle: "My great service",
+    subtitle: "Ruby on Rails",
+    body: "ad;lkjasdfl;kajsd fa;lsdkfj as;dlkfj asd
+    adl;kfjasdl;kfjasdl;fkajsdfl;kasdjfl;asdkjfas
+    sdklfjasdl a;sdlkfjasd ;lfkja;sldkfjasd
+    fa;lsdkjfa sdf a;lsdkfj adls;kjf asd fa;sldkfjasd
+    asld;fkjasdf asd f;alksdjf d akjsdf ;alskdjjkd a;sldkfjasd",
+    main_image: "https://via.placeholder.com/600x400",
+    thumb_image: "https://via.placeholder.com/350x200"
+  )
+end
+
+1.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Portfolio title: #{portfolio_item}",
+    subtitle: "Angular",
     body: "ad;lkjasdfl;kajsd fa;lsdkfj as;dlkfj asd
     adl;kfjasdl;kfjasdl;fkajsdfl;kasdjfl;asdkjfas
     sdklfjasdl a;sdlkfjasd ;lfkja;sldkfjasd
