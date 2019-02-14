@@ -28,3 +28,7 @@
 <br>
 
 <%= link_to 'New Blog', new_blog_path %>
+
+<% if session[:source] %>
+  <p>Thanks for visiting me from <%= session[:source] %></p>
+<% end %>
