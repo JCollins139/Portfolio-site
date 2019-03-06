@@ -45,19 +45,20 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 55em;
 }
 
 
 /*
  * Header
  */
-.masthead {
-  margin-bottom: 2rem;
+.masthead .masthead-brand {
+  margin-bottom: 5rem;
 }
 
 .masthead-brand {
   margin-bottom: 0;
+  margin-right: 2rem;
 }
 
 .nav-masthead .nav-link {
