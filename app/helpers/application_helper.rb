@@ -16,4 +16,8 @@ module ApplicationHelper
      end
   end
 
+  def copyright_generator
+    JccViewTool::Renderer.copyright 'Joe Collins', 'All rights reserved'
+  end
+
 end
