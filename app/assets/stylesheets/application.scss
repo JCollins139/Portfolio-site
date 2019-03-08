@@ -53,7 +53,7 @@ body {
  * Header
  */
 .masthead .masthead-brand {
-  margin-bottom: 5rem;
+  margin-bottom: auto;
 }
 
 .masthead-brand {
@@ -116,20 +116,14 @@ body {
  * Custom Styles
  */
 
-.form-group {
-
-}
-
-.card {
-  padding-bottom: 5rem;
-}
-
-.card-body {
+.card-block {
   text-align: left;
   color: black;
 }
 
-.edit_user {
+.card {
+  padding: 2rem;
+  margin: 2rem;
 }
 
 .auth-links a {
