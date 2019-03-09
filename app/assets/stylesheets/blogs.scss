@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 /* stylelint-disable selector-list-comma-newline-after */
 
@@ -135,4 +136,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .inner p {
   text-align: center;
+}
+
+// footer
+.social-links li {
+  font-size: 3em;
 }
