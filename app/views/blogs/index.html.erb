@@ -8,23 +8,17 @@
       <%= render @blogs %>
       <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
 
-
-
       <nav class="blog-pagination">
         <a class="btn btn-outline-primary" href="#">Older</a>
         <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
       </nav>
+    </div>
 
-    </div><!-- /.blog-main -->
-
-  <!-- sidebar -->
-    <aside class="col-md-4 blog-sidebar">
+    <div class="col-md-4 blog-sidebar">
       <%= render 'shared/blog_sidebar' %>
-    </aside>
-  <!-- /.blog-sidebar -->
+    </div>
 
-  </div><!-- /.row -->
-
-</main><!-- /.container -->
+  </div>
+</main>
 
 <p id="notice"><%= notice %></p>
