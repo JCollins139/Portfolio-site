@@ -1,5 +1,13 @@
 @import "bootstrap";
 
+// BrewThru color scheme
+// C1F4F1 = pale blue
+// FF75A7 = hot pink
+// FF75A7 = bright orange
+// A1F981 = lime green
+// E5EA4D = yellow green
+
+
 /*
  * Globals
  */
@@ -152,4 +160,9 @@ main {
   float: none;
   margin-top: 8rem;
   margin-bottom: 8rem;
+}
+
+.nav-link {
+  margin-left: 15px;
+  margin-right: 15px;
 }
