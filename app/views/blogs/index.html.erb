@@ -1,10 +1,10 @@
-<main role="main" class="container">
+<div role="main" class="container">
   <div class="row">
     <div class="col-md-8 blog-main">
       <h3 class="pb-3 mb-4 font-italic border-bottom">
         Cranking out code
       </h3>
-
+      <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
       <%= render @blogs %>
       <%= paginate @blogs %>
       <%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
@@ -16,6 +16,6 @@
     </div>
 
   </div>
-</main>
+</div>
 
 <p id="notice"><%= notice %></p>
