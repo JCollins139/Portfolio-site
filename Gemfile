@@ -53,6 +53,7 @@ end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'jquery-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.5'
@@ -62,3 +63,4 @@ gem 'jcc_view_tool', git: 'https://github.com/JCollins139/jcc_view_tool'
 gem 'petergate', '~> 1.7'
 gem 'font-awesome-rails'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
