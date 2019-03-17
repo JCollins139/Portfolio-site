@@ -1,5 +1,3 @@
-alert('yo yoyoyo')
-
 document.addEventListener("turbolinks:load", function () {
   let ready = undefined;
   let set_positions = undefined;
