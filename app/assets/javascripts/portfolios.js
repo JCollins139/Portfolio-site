@@ -1,4 +1,4 @@
-document.addEventListener("turbolinks:load", function () {
+document.addEventListener("click", function () {
   let ready = undefined;
   let set_positions = undefined;
 
