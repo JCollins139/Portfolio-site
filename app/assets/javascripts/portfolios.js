@@ -1,4 +1,6 @@
-document.addEventListener("click", function () {
+alert('hello from portfolios.js')
+
+document.addEventListener("turbolinks:load", function () {
   let ready = undefined;
   let set_positions = undefined;
 
