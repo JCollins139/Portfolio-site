@@ -1,5 +1,3 @@
-alert('hello from portfolios.js');
-
 var ready, set_positions;
 
 ready = void 0;
