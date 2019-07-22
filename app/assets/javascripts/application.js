@@ -12,7 +12,9 @@
 //= require jquery3
 //= require jquery_ujs
 //= require jquery-ui
+//= require jquery-ui/widgets/sortable
 //= require activestorage
 //= require html.sortable
 //= require portfolios
 //= require bootstrap-sprockets
+//= rewuire tree .

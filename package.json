@@ -2,6 +2,7 @@
   "name": "DevcampPortfolio",
   "private": true,
   "dependencies": {
+    "html5sortable": "^0.9.16",
     "jquery": "^3.3.1"
   }
 }
