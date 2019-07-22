@@ -1,38 +1,38 @@
-alert('hello from portfolios.js')
+alert('hello from portfolios.js');
 
-document.addEventListener("turbolinks:load", function () {
-  let ready = undefined;
-  let set_positions = undefined;
+var ready, set_positions;
 
-  set_positions = function () {
-    $('div[data-id]').each(function (i) {
-      $(this).attr('data-pos', i + 1);
-    });
-  }
+ready = void 0;
 
-  ready = function () {
+set_positions = void 0;
+
+set_positions = function() {
+  $('.card').each(function(i) {
+    $(this).attr('data-pos', i + 1);
+  });
+};
+
+ready = function() {
+  set_positions();
+  $('.sortable').sortable();
+  $('.sortable').sortable().bind('sortupdate', function(e, ui) {
+    var updated_order;
+    updated_order = [];
     set_positions();
-    $('.sortable').sortable();
-    $('.sortable').sortable().bind('sortupdate', function (e, ui) {
-      let updated_order;
-      updated_order = [];
-      set_positions();
-      $('div[data-id]').each(function (i) {
-        updated_order.push({
-          id: $(this).data('id'),
-          position: i + 1
-        });
-      });
-      return $.ajax({
-        type: 'PUT',
-        url: '/portfolios/sort',
-        data: {
-          order: updated_order
-        }
+    $('.card').each(function(i) {
+      updated_order.push({
+        id: $(this).data('id'),
+        position: i + 1
       });
     });
-    return;
-  }
+    $.ajax({
+      type: 'PUT',
+      url: '/portfolios/sort',
+      data: {
+        order: updated_order
+      }
+    });
+  });
+};
 
-  $(document).ready(ready);
-});
+$(document).ready(ready);
