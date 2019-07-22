@@ -17,4 +17,3 @@
 //= require html.sortable
 //= require portfolios
 //= require bootstrap-sprockets
-//= rewuire tree .
