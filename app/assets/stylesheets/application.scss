@@ -37,8 +37,7 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-  background-color: #333;
+  // height: 100%;
 }
 
 body {
@@ -48,23 +47,51 @@ body {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
-  color: #F4AF4E;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 h3 {
-  color: #FF75A7;
+  color: #F4AF4E;
 }
 
 h1 {
-  color: #FF75A7;
+  color: #c800dc;
 }
 
 .cover-container {
   max-width: 55em;
 }
 
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.cover-container p {
+  padding-top: 2em;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
 
 /*
  * Header
@@ -76,7 +103,7 @@ h1 {
 .masthead-brand {
   margin-bottom: 0;
   margin-right: 2rem;
-  color: #49F4E9;
+  color: #64B2C8;
 }
 
 .nav-masthead .nav-link {
@@ -122,10 +149,17 @@ h1 {
   font-weight: 700;
 }
 
-main {
-  margin: auto;
+.cover-heading {
+
 }
 
+.greeting p {
+  color: #F9F89F;
+}
+
+.cover-container p {
+  color: #F9F89F;
+}
 /*
  * Footer
  */
@@ -179,4 +213,19 @@ main {
 
 #pro-pic {
   transform: rotate(90deg);
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('vapor-mountain.jpg') no-repeat;
+  background-size: cover;
 }
