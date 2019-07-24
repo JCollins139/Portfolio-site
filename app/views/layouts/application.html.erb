@@ -14,15 +14,23 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="text-center">
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-          <%= render "shared/application_nav" %>
+  <body>
+   <div class="site-wrapper">
+     <div class="site-wrapper-inner">
+       <div class="cover-container">
 
-          <%= yield %>
+         <div id="background"></div>
 
-          <%= render "shared/application_footer" %>
+         <%= render "shared/application_nav" %>
 
-          <%= source_helper("application") %>
-    </div>
-  </body>
+         <%= yield %>
+
+         <%= render "shared/application_footer" %>
+
+         <%= source_helper("application") %>
+
+       </div>
+     </div>
+   </div>
+ </body>
 </html>
