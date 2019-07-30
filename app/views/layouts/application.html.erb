@@ -20,19 +20,21 @@
        <div class="cover-container">
 
          <%= video_tag(
-           'vapor-vid.mp4',
+           'vapor-road.mp4',
            id: 'background',
            autoplay: true,
            loop: true,
            muted: true,
            poster: 'vapor-mountain.jpg'
            ) %>
-
          <%= render "shared/application_nav" %>
+
 
          <%= yield %>
 
          <%= render "shared/application_footer" %>
+
+         <%= render "shared/alerts" %>
 
          <%= source_helper("application") %>
 

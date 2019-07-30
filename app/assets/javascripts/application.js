@@ -16,4 +16,6 @@
 //= require activestorage
 //= require html.sortable
 //= require portfolios
+//= require cocoon
+//= require gritter
 //= require bootstrap-sprockets
