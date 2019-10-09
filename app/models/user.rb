@@ -7,7 +7,6 @@ class User < ApplicationRecord
   petergate(roles: [:site_admin], multiple: false)                                      ##
   ############################################################################################
 
-
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -23,4 +22,7 @@ class User < ApplicationRecord
   def last_name
     self.name.split.last
   end
+
+
+
 end
