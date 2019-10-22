@@ -1,6 +1,14 @@
 @import "bootstrap";
 @import "font-awesome";
 
+// BrewThru color scheme
+// #49F4E9 = bright blue
+// #FF75A7 = hot pink
+// #F4AF4E = bright orange
+// #A1F981 = lime green
+// #E5EA4D = yellow green
+// #F9F89F = pale yellow
+
 /* stylelint-disable selector-list-comma-newline-after */
 
 body {
@@ -164,4 +172,30 @@ h1, h2, h3, h4, h5, h6 {
 .col-mid-11 {
   color: white;
   margin-left: 4rem;
+}
+
+// blog header
+
+.text-dark {
+  color: #FF75A7 !important;
+}
+
+.text-muted {
+  color: #A1F981 !important;
+}
+
+.border-bottom {
+  color: #F4AF4E !important;
+}
+
+.font-italic {
+  color: #F9F89F;
+}
+
+.blog-post-title a{
+  color: #49F4E9;
+}
+
+.blog-main h2 {
+  color: #49F4E9;
 }
